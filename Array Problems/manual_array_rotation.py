@@ -41,4 +41,16 @@ Second half = [3, 4, 5]     → index k to n-1
 Rotated = Second half + First half
         = [3, 4, 5] + [1, 2]
         = [3, 4, 5, 1, 2]
+        
+“We use k % n because array rotation is cyclic. Rotating more than n times is redundant, so we reduce it to the minimum effective rotations.”
+
+🔹 Edge Cases it handles
+1. k > n
+k = 12, n = 5
+k % n = 2
+2. k = n
+k = 5, n = 5
+k % n = 0  → no rotation
+3. k = 0
+k % n = 0 → no rotation
 '''
