@@ -53,4 +53,22 @@ k = 5, n = 5
 k % n = 0  → no rotation
 3. k = 0
 k % n = 0 → no rotation
+
+Add second half (core logic)
+for i in range(k, n):
+    result.append(arr[i])
+
+“First, I take elements from index k to n-1,
+which forms the second half of the array.”
+
+Example:
+
+[1,2,3,4,5], k=2 → [3,4,5]
+6. Add first half
+for i in range(0, k):
+    result.append(arr[i])
+
+“Then I append the first k elements to the end.”
+
+[1,2]
 '''
